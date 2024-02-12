@@ -1,0 +1,77 @@
+Infrastructure Codified Solution Documentation
+==============================================
+
+Date: February 11, 2024
+Author: Alain F Foryim
+Company: Coalfire
+Contact: foryimalain87@gmail.com
+
+Overview
+
+This document presents the codified solution for the infrastructure utilizing AWS services. The infrastructure is structured to support a web application with high availability, scalability, and security.
+
+Infrastructure Components
+=========================
+
+The infrastructure comprises several key components:
+
+    . Virtual Private Cloud (VPC): Isolated network environment for resources.
+    . Subnets: Segmented network segments for different purposes.
+    . Internet Gateway: Provides internet access to resources within the VPC.
+    . Route Tables: Directs traffic within the VPC and to the internet gateway.
+    . Security Groups: Firewall rules to control inbound and outbound traffic.
+    . Compute Instances: EC2 instances to host the application.
+    . Database Instance: RDS instance to store application data.
+    . Load Balancer: Distributes incoming traffic across instances for high availability.
+    . SSL Certificate: Ensures secure communication with the load balancer.
+
+Terraform Configuration
+=======================
+
+The infrastructure is codified using Terraform. Below are the main Terraform resources:
+
+    . Provider Configuration: Specifies the AWS region.
+    . VPC and Subnets: Defines the VPC and associated subnets.
+    . Internet Gateway: Establishes the internet gateway for the VPC.
+    . Route Tables: Configures route tables for subnet routing.
+    . Security Groups: Sets up security groups for instances.
+    . EC2 Instances: Deploys compute instances for the application.
+    . RDS Instance: Creates the database instance.
+    . Load Balancer: Configures the Application Load Balancer.
+    . SSL Certificate: Manages the SSL certificate for HTTPS traffic.
+
+Deployment Process
+==================
+
+To deploy the infrastructure:
+
+    > Install Terraform and AWS CLI.
+    > Configure AWS credentials.
+    > Clone the Terraform configuration repository.
+    > Modify variables as needed.
+    > Initialize Terraform with terraform init.
+    > Plan the deployment with terraform plan.
+    > Apply the changes with terraform apply.
+    > Monitor the deployment process for any errors.
+    > Access the deployed resources using appropriate endpoints.
+
+
+Challanges faced
+================
+
+1. Time constraint
+
+
+Sources:
+
+I utilized the following resources in completing this project
+
+1. Stackoverflow
+2. Official terraform website 
+
+
+Conclusion
+
+This documentation outlines the codified solution for the infrastructure utilizing Terraform and AWS services. It ensures a reliable, scalable, and secure environment for hosting the web application.
+
+
