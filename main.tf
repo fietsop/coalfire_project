@@ -140,7 +140,7 @@ resource "aws_instance" "bastion_instance" {
 }
   
 resource "aws_instance" "wp_server_1" {
-  ami           = "ami-0d77c9d87c7e619f9" # Change this to your RedHat AMI
+  ami           = "ami-0d77c9d87c7e619f9"
   instance_type = "t3a.micro"
   subnet_id     = aws_subnet.wp_subnet_1.id
   connection {
@@ -159,7 +159,7 @@ resource "aws_instance" "wp_server_1" {
 }
 
 resource "aws_instance" "wp_server_2" {
-  ami           = "ami-0d77c9d87c7e619f9" # Change this to your RedHat AMI
+  ami           = "ami-0d77c9d87c7e619f9" 
   instance_type = "t3a.micro"
   subnet_id     = aws_subnet.wp_subnet_2.id
   connection {
